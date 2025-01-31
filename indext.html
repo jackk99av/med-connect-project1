@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConnect - Your Healthcare Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="/assets/j__1_-removebg-preview.png" alt="MedConnect Logo"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn" type="button">Login</button>
+                <button class="signup-btn" type="button">Sign Up</button>
+                <button class="logout-btn" type="button" hidden>Logout</button>
+            </div>
+        </nav>
+    </header>
+   
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Enter email" required>
+            <input type="password" placeholder="Enter password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Enter name" required>
+            <input type="email" placeholder="Enter email" required>
+            <input type="password" placeholder="Enter password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="/assets/image.png" alt="Doctor">
+        </div>
+        <div class="hero-content">
+            <h1>Connect with <span class="highlight">Top Medical Experts</span> Anytime</h1>
+            <p>Your health is our priority. Find specialists and book consultations easily.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a doctor or specialty...">
+                <button>Find Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">24/7 <span>Healthcare Support</span></div>
+        <div class="stat-item">200+ <span>Expert Doctors</span></div>
+        <div class="stat-item">2M+ <span>Patients Served</span></div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Medical Services</h2>
+        <div class="service-cards">
+            <div class="service"><img src="/assets/nappy-bxrrnAtx6vY-unsplash.jpg"  alt="Checkup">General Checkup</div>
+            <div class="service highlight"><img src="/assets/towfiqu-barbhuiya-QsBfOwMoPNY-unsplash.jpg" alt="Cardiology">Hart &cardiology</div>
+            <div class="service"><img src="/assets/alexander-mils-nG4ZimMIO_k-unsplash.jpg" alt="Nutrition">Diet & Nutrition</div>
+            <div class="service"><img src="/assets/mental-wellness.jpg" alt="Mental Wellness">Mental Wellness</div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Patients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"MedConnect helped me find the right specialist quickly. Highly recommended!"</p>
+                <span>- Jane Doe</span>
+            </div>
+            <div class="testimonial">
+                <p>"The best healthcare experience I've had online! Seamless booking process."</p>
+                <span>- John Smith</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment">
+        <h2>Book an Appointment</h2>
+        <p>Schedule a consultation with top doctors today.</p>
+        <button class="appointment-btn">Book Now</button>
+    </section>
+
+    <section class="newsletter">
+        <h2>Stay Updated with MedConnect</h2>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-logo"><img src="/assets/j__1_-removebg-preview.png" alt="MedConnect Logo"></div>
+            <div class="useful-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#contact">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <h3>Our Location</h3>
+                <p>456 Health Street, MedCity, Country</p>
+                <img src="images/map-location.png" alt="Map Location">
+            </div>
+        </div>
+        <p>&copy; 2025 MedConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

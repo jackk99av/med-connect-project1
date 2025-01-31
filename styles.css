@@ -1,0 +1,464 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 15px 20px;
+  color: white;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons button {
+  background: white;
+  color: #0077b6;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.auth-buttons button:hover {
+  background: #005f8a;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 1000;
+  width: 300px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #005f8a;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0077b6;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: #0077b6;
+  color: white;
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero .search-bar {
+  margin-top: 20px;
+}
+
+.hero .search-bar input {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero .search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #ffd700;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero .search-bar button:hover {
+  background: #e0c300;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: white;
+}
+
+.stat-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #f8f9fa;
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Appointment */
+.appointment {
+  text-align: center;
+  padding: 40px;
+  background: #0077b6;
+  color: white;
+}
+
+.appointment-btn {
+  background: #ffd700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.appointment-btn:hover {
+  background: #e0c300;
+}
+
+.newsletter{
+  padding: 50px;
+  background-color: #afd1e4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #005f8a;
+  padding: 20px;
+  color: white;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links a {
+  color: white;
+  text-decoration: none;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0077b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons button {
+  background: white;
+  color: #0077b6;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.auth-buttons button:hover {
+  background: #005f8a;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: #0077b6;
+  color: white;
+  margin-top: 60px; /* Adjusts for fixed navbar */
+}
+
+/* Swap Image & Text */
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+  order: 0; /* Move text to the right */
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  order: 1; /* Move image to the left */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero .search-bar {
+  margin-top: 20px;
+  display: flex;
+}
+
+.hero .search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.hero .search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #ffd700;
+  color: black;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.hero .search-bar button:hover {
+  background: #e0c300;
+}
+
+/* Adjust Hero Image */
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 60px 20%;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Service Cards */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service {
+  background: #becddb;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 80px; /* Make all service images a good size */
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+  }
+
+  .hero-content, .hero-image {
+      max-width: 100%;
+      order: 0; /* Reset order for mobile */
+  }
+
+  .hero .search-bar {
+      flex-direction: column;
+  }
+
+  .hero .search-bar input {
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  .hero .search-bar button {
+      border-radius: 5px;
+  }
+
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .service {
+      width: 100%; /* Make services full width on smaller screens */
+  }
+}
